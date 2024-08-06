@@ -18,7 +18,7 @@ const educationPage = () => {
         <div className="w-full h-fit flex">
           <div className="w-1/4 font-rubik flex items-center justify-evenly text-lg max-sm:text-base ">
             {" "}
-            January 2023 - September 2023
+            Jan 2024 - Aug 2024
           </div>
           <div className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point">
             <div className="text-2xl font-rubik max-sm:text-xl flex flex-col lg:flex-row md:flex-row gap-5  mb-6">
@@ -41,7 +41,7 @@ This preparation phase was crucial in refining my expertise and readying myself 
         <div className="w-full h-fit flex">
           <div className="w-1/4 font-rubik flex items-center justify-evenly text-lg max-sm:text-base ">
             {" "}
-            July 2021 - 2023
+            Jul 2021 - Jul 2023
           </div>
           <div className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point">
             <div className="text-2xl font-rubik max-sm:text-xl flex flex-col lg:flex-row md:flex-row gap-5 mb-6">
