@@ -96,7 +96,7 @@ const HackerBtn = ({ label }: { label: string }) => {
           <div className="py-1" role="none">
             <a
               href="/LATRACHE_BADER_FR.pdf"
-              className="text-white  hover:text-gray-700 flex justify-between px-4 py-2 border-b  border-b-gray-200 text-sm hover:bg-gray-200"
+              className="dark:text-white  text-gray-600 hover:text-black  dark:hover:text-gray-700 flex justify-between px-4 py-2 border-b  border-b-gray-200 text-sm hover:bg-gray-200"
               role="menuitem"
               download={"Bader_Latrache_CV"}
             >
@@ -110,7 +110,7 @@ const HackerBtn = ({ label }: { label: string }) => {
             </a>
             <a
               href="/LATRACHE_BADER_ENG.pdf"
-              className="text-white hover:text-gray-700  px-4 flex justify-between py-2 text-sm hover:bg-gray-200"
+              className="dark:text-white  text-gray-600 hover:text-black  dark:hover:text-gray-700  px-4 flex justify-between py-2 text-sm hover:bg-gray-200"
               role="menuitem"
               download={"Bader_Latrache_Resume"}
             >
