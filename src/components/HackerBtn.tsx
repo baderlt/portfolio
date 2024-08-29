@@ -55,6 +55,7 @@ const HackerBtn = ({ label }: { label: string }) => {
       size={"lg"}
       className="text-base px-5 py-6"
       onMouseEnter={startScrambling}
+      onClick={toggleMenu}
     >
     {/* //   {" "}
     //   <Download className="mx-1" />
@@ -64,7 +65,7 @@ const HackerBtn = ({ label }: { label: string }) => {
    
    <div className="relative inline-block text-left">
       <button
-        onClick={toggleMenu}
+    
         className="inline-flex justify-center w-full "
         type="button"
       >
