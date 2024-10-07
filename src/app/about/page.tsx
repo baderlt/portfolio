@@ -3,7 +3,7 @@ import Aboutfooter from "@/components/Aboutfooter";
 import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
 import { Heart, User2 } from "lucide-react";
-import Description from "@/components/desciption";
+import Description from "@/components/Desciption";
 import Hobbies from "@/components/Hobbies";
 
 
@@ -26,7 +26,6 @@ const page = () => {
         <Heading>
         Full Stack web Developer, Based In Morocco.
         </Heading>
-
        <Description>
           I am a Full Stack Web Developer based in Morocco, specializing in
           crafting dynamic web applications using Next.js, Django, and Nest.js.

@@ -5,7 +5,7 @@ import { Key, Layers } from "lucide-react";
 import chatApp from "../../../public/chat_app.png";
 import ddq from "../../../public/package.png";
 import stock from "../../../public/stock.png";
-import Description from "@/components/desciption";
+import Description from "@/components/Desciption";
 
 const projectsPage = () => {
   // PROJECTS DATA

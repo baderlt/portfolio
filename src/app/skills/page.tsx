@@ -22,7 +22,7 @@ import Mysql from '../../../public/mysql.png';
 import Mongodb from '../../../public/mongodb.jpeg';
 import socket from '../../../public/socket.png';
 import {motion} from "framer-motion";
-import Description from "@/components/desciption";
+import Description from "@/components/Desciption";
 const skillPage = () => {
 
   const language = [
