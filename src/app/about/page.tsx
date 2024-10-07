@@ -1,7 +1,12 @@
+
 import Aboutfooter from "@/components/Aboutfooter";
 import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
 import { Heart, User2 } from "lucide-react";
+import Description from "@/components/desciption";
+import Hobbies from "@/components/Hobbies";
+
+
 const page = () => {
   const items = [
     { hobby: "coding" },
@@ -22,7 +27,7 @@ const page = () => {
         Full Stack web Developer, Based In Morocco.
         </Heading>
 
-        <p className=" font-poppins text-xl w-full text-primary max-sm:text-lg">
+       <Description>
           I am a Full Stack Web Developer based in Morocco, specializing in
           crafting dynamic web applications using Next.js, Django, and Nest.js.
           With a passion for both building innovative projects and contributing
@@ -31,12 +36,12 @@ const page = () => {
           to delivering projects efficiently, I specialize in creating
           intuitive, responsive interfaces that captivate users and leave a
           lasting impact.
-        </p>
+        </Description>
       </div>
       <div className="hover:bg-secondary/30 p-2 rounded-md w-full flex flex-row justify-between max-lg:flex-col my-4 border-y py-4">
         <Aboutfooter />
       </div>
-      <div className="block hover:bg-secondary/30 p-2 rounded-md w-full">
+     <Hobbies>
         <h1 className="gap-2 text-3xl font-poppins text-primary font-semibold flex icon_underline relative max-sm:text-2xl">
           <Heart className="h-8 w-8" /> Hobbies
         </h1>
@@ -51,8 +56,8 @@ const page = () => {
               </div>
             );
           })}
-        </div>
       </div>
+        </Hobbies>
     </div>
   );
 };

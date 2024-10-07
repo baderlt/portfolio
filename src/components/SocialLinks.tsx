@@ -1,7 +1,9 @@
+"use client";
 import { cn } from "@/lib/utils";
 import { Facebook, Linkedin, ExternalLink } from "lucide-react";
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
+import {motion} from "framer-motion"
 
 const SocialLinks = () => {
   const links = [
@@ -18,7 +20,10 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <>
+    <motion.div initial={{opacity:0,x:-100}}
+    animate={{opacity:1,x:0}}
+    transition={{duration:0.7}}
+    > 
       {links.map((itm, indx) => {
         return (
           <Link
@@ -31,7 +36,7 @@ const SocialLinks = () => {
           </Link>
         );
       })}
-    </>
+    </motion.div>
   );
 };
 

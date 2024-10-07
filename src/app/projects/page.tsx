@@ -1,10 +1,11 @@
 import Heading from "@/components/Heading";
 import ProjectCards from "@/components/ProjectsCard";
 import { Badge } from "@/components/ui/badge";
-import { Layers } from "lucide-react";
+import { Key, Layers } from "lucide-react";
 import chatApp from "../../../public/chat_app.png";
 import ddq from "../../../public/package.png";
 import stock from "../../../public/stock.png";
+import Description from "@/components/desciption";
 
 const projectsPage = () => {
   // PROJECTS DATA
@@ -55,18 +56,18 @@ const projectsPage = () => {
       <div className="flex flex-col gap-3">
         <Heading>My Projects</Heading>
 
-        <p className=" font-poppins text-lg w-full text-primary max-sm:text-base">
-       
+  
+  <Description>
 I enjoy creating exciting projects. 
 Here, you will discover a curated selection of my creative ventures and technical undertakings
 . Each project symbolizes a journey of innovation, problem-solving,
  and continuous learning. I invite you to explore this showcase of my passion and expertise in action.
-        </p>
+      </Description>
       </div>
 
       <div className=" w-full flex flex-col items-center justify-center  md:flex-row md:flex-wrap ">
-        {Projects.map((val, indx) => {
-          return <ProjectCards key={indx} value={val} />;
+        {Projects.map((val, index) => {
+          return <ProjectCards index={index} value={val} />;
         })}
       </div>
     </div>

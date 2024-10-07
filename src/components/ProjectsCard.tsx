@@ -1,7 +1,9 @@
+"use client";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { Badge } from "./ui/badge";
+import {AnimatePresence, motion,useInView} from "framer-motion";
 import {
   Card,
   CardContent,
@@ -11,13 +13,24 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import { useRef } from "react";
 
 interface projectcardprops {
+  index:number;
   value: any;
 }
-const ProjectCards: React.FC<projectcardprops> = ({ value }) => {
+const ProjectCards: React.FC<projectcardprops> = ({ index ,value }) => {
+   let X=index  % 2 ==0 ? -200 :200; 
+   const ref =useRef(null);
+   const isInView=useInView(ref,{once:true});
+    
   return (
-    <>
+    <AnimatePresence mode="wait">
+        <motion.div initial={{opacity:0,x:X}}
+        ref={ref}
+    animate={ isInView ?{opacity:1,x:0}:{opacity:0,x:X}}
+    transition={{duration:0.8}}
+    exit={{opacity:0}}>
       <CardContainer className="inter-var mr-6 ">
         <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl    ">
           <CardItem
@@ -77,7 +90,9 @@ const ProjectCards: React.FC<projectcardprops> = ({ value }) => {
           </CardItem>
         </CardBody>
       </CardContainer>
-    </>
+    </motion.div>
+    </AnimatePresence>
+
   );
 };
 

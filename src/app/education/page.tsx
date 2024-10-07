@@ -1,3 +1,4 @@
+import Education_Description from "@/components/Education_des";
 import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase } from "lucide-react";
@@ -24,7 +25,8 @@ const educationPage = () => {
             <div className="text-2xl font-rubik max-sm:text-xl flex flex-col lg:flex-row md:flex-row gap-5  mb-6">
          <img src="worldskills.svg"  alt="worldskills" width={80} /> Cycle préparatoire de la compétition WorldSkills, <br /> CMC Rabat
             </div>
-            <p className=" font-poppins text-base w-full text-primary  max-sm:text-xs">
+          
+          <Education_Description>
          
 Here’s a revised version incorporating the detail about the exams:
 
@@ -33,7 +35,8 @@ From January 2023 to September 2023, I engaged in intensive preparation for the 
 First, I competed in the 4th Unofficial Web Development Competition 2024, an online event that challenged my abilities in web development. Second, I took part in the 54th National Competition in Taiwan for Web Technologies, where I further honed my skills and tested my knowledge against international standards.
 
 This preparation phase was crucial in refining my expertise and readying myself for the upcoming WorldSkills competition.
-            </p>
+          
+          </Education_Description>
           </div>
         </div>
       </div>
@@ -48,14 +51,16 @@ This preparation phase was crucial in refining my expertise and readying myself 
              <img src="OFPPT.svg" width={70} alt="" />  TECHNICIAN SPECIALIZED IN DIGITAL DEVELOPMENT FULL STACK WEB
               OPTION, <br /> ISTA TAZA
             </div>
-            <p className=" font-poppins text-base w-full text-primary  max-sm:text-xs">
+          
+          <Education_Description>
               I have obtained a diploma in Digital Development with a Full Stack
               Web Option from ISTA Taza , the Office for Occupational Training
               and Promotion of Employment in Morocco. This program provided me
               with a comprehensive education in both the theoretical and
               practical aspects of web development, equipping me with valuable
               skills for various opportunities in the field.
-            </p>
+          
+          </Education_Description>
           </div>
         </div>
       </div>

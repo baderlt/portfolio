@@ -1,3 +1,4 @@
+"use client";
 import Heading from "@/components/Heading";
 import SkillsFooter from "@/components/SkillsFotter";
 import { Badge } from "@/components/ui/badge";
@@ -20,8 +21,10 @@ import Node from "../../../public/node.png"
 import Mysql from '../../../public/mysql.png';
 import Mongodb from '../../../public/mongodb.jpeg';
 import socket from '../../../public/socket.png';
-
+import {motion} from "framer-motion";
+import Description from "@/components/desciption";
 const skillPage = () => {
+
   const language = [
     { alt: "html", img: html },
     { alt: "css", img: css },
@@ -55,14 +58,13 @@ const skillPage = () => {
       <div className="flex flex-col gap-8">
         <Heading>My Technical Experience/Skills.</Heading>
 
-        <p className="font-poppins text-xl w-full text-primary max-sm:text-lg">
-        
+      <Description>
         I have a solid understanding of HTML5, CSS3, JavaScript, and React.js, 
         along with intermediate experience in Next.js and TypeScript, and knowledge of 
         responsive design principles. I am also skilled in database management with MySQL
          and MongoDB. Specializing in web application development, 
         I excel in utilizing JavaScript, Laravel, React, Next.js, and Node.js to build robust and engaging projects.
-        </p>
+        </Description>
         <div className="block my-8 border-y p-2">
           <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
             Programming Languages

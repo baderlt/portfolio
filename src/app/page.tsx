@@ -4,6 +4,7 @@ import HeroTexts from "@/components/HeroTexts";
 import GithubBtn from "@/components/GithubBtn";
 import DownLoadResumeBtn from "@/components/DownLoadResumeBtn";
 import { CardContainer } from "@/components/ui/3d-card";
+import MyImage from "@/components/MyImage";
 
 export const siteConfig = {
   name: "BADER LATRACHE",
@@ -23,10 +24,8 @@ export default function Home() {
         </div>
       </div>
       {/* RIGHT SIDE image  */}
-      <div className="  w-full   block max-lg:hidden ">
- <CardContainer >
-        <img src="bader_photo.jpg" className="imgbader" alt="bader latrache "  />
-        </CardContainer>
+      <div className="  w-full .box  block max-lg:hidden " >
+<MyImage/>
         <GithubBtn />
       </div>
 
