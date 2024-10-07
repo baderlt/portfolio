@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { Badge } from "./ui/badge";
-import {AnimatePresence, motion,useInView} from "framer-motion";
+import { motion,useInView} from "framer-motion";
 import {
   Card,
   CardContent,
@@ -25,8 +25,9 @@ const ProjectCards: React.FC<projectcardprops> = ({ index ,value }) => {
    const isInView=useInView(ref,{once:true});
     
   return (
-    <AnimatePresence mode="wait">
+
         <motion.div initial={{opacity:0,x:X}}
+        key={index}
         ref={ref}
     animate={ isInView ?{opacity:1,x:0}:{opacity:0,x:X}}
     transition={{duration:0.8}}
@@ -91,8 +92,7 @@ const ProjectCards: React.FC<projectcardprops> = ({ index ,value }) => {
         </CardBody>
       </CardContainer>
     </motion.div>
-    </AnimatePresence>
-
+ 
   );
 };
 

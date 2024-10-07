@@ -67,7 +67,7 @@ Here, you will discover a curated selection of my creative ventures and technica
 
       <div className=" w-full flex flex-col items-center justify-center  md:flex-row md:flex-wrap ">
         {Projects.map((val, index) => {
-          return <ProjectCards index={index} value={val} />;
+          return <ProjectCards key={index} index={index} value={val} />;
         })}
       </div>
     </div>

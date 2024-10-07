@@ -42,6 +42,7 @@ const MyImage = () => {
           src={MyImageList[curentImage]} // TypeScript now knows this is a string
           className="imgbader"
           alt="bader latrache"
+          key={curentImage}
         />
       </CardContainer>
     </motion.div>
