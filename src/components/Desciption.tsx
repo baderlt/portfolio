@@ -9,9 +9,9 @@ const Description = ({ children }: { children: React.ReactNode }) => {
 
   return (
       <motion.p 
-    initial={{opacity:0 ,x:300}}
-    animate={isInView ? {opacity:1,x:0} : {opacity:0,x:300}}
-    transition={{duration:0.5}}
+    initial={{opacity:0 ,x:50}}
+    animate={isInView ? {opacity:1,x:0} : {opacity:0,x:50}}
+    transition={{duration:1}}
     ref={ref}
     className="font-poppins text-xl w-full text-primary max-sm:text-lg">
       {children}

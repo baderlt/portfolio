@@ -11,13 +11,23 @@ const MyImageList: Record<number, string> = {
   4: "Me/me4.jpg"
 };
 
+// Function to preload images
+const preloadImages = (imageList: Record<number, string>) => {
+  Object.values(imageList).forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+};
+
 const MyImage = () => {
   const [curentImage, setCurentImage] = useState<number>(1); // curentImage is of type number
   const ref = useRef(null);
   const IsInView = useInView(ref, { once: true });
 
-  // Change image after 3 seconds
+  // Change image after 3 seconds and preload images
   useEffect(() => {
+    preloadImages(MyImageList); // Preload images at the beginning
+
     const intervalId = setInterval(() => {
       setCurentImage((prevImage) =>
         prevImage === 4 ? 1 : prevImage + 1
@@ -27,7 +37,6 @@ const MyImage = () => {
     // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
-
 
   return (
     <motion.div
@@ -39,10 +48,10 @@ const MyImage = () => {
     >
       <CardContainer>
         <img
-          src={MyImageList[curentImage]} // TypeScript now knows this is a string
+          src={MyImageList[curentImage]} // Preloaded image
           className="imgbader"
           alt="bader latrache"
-          key={curentImage}
+          key={curentImage} // Ensure React updates the image on each state change
         />
       </CardContainer>
     </motion.div>
