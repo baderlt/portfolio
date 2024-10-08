@@ -28,8 +28,8 @@ export default function RootLayout({
         <Analytics/>
         <Main  >
           {children}
-          </Main>
           <SpeedInsights />
+        </Main>
       </body>
     </html>
   );
