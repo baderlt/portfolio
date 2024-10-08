@@ -1,7 +1,12 @@
 "use client";
 import { Dna, Globe2, Languages } from "lucide-react";
-import {motion} from "framer-motion"; 
+import {motion, useInView} from "framer-motion"; 
+import { useRef } from "react";
 const Aboutfooter = () => {
+
+  const ref=useRef(null);
+  const IsInView=useInView(ref,{once:true});
+
   const items = [
     {
       name: "Language",
@@ -22,8 +27,9 @@ const Aboutfooter = () => {
         return (
           <motion.div className="p-1 w-fit relative pb-8" key={indx}
           initial={{opacity:0, x:-50}}
-          animate={{opacity:1, x:0}}
-          transition={{duration:0.5}}>
+          animate={IsInView ? {opacity:1, x:0} : {opacity:0, x:-50}}
+          transition={{duration:0.5}}
+          ref={ref}>
             <h1 className="gap-2 text-3xl font-poppins text-primary font-semibold relative flex icon_underline max-sm:text-2xl">
               {val.icon}
               {val.name}

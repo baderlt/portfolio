@@ -3,7 +3,7 @@ import "./globals.css";
 import { metadata } from "./metadata";
 export { metadata };
 import Main from "./main";
-
+import { Analytics } from "@vercel/analytics/react"
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable}`} id="body">
+      <Analytics/>
         <Main  >
           {children}
           </Main>
