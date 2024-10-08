@@ -4,6 +4,7 @@ import { metadata } from "./metadata";
 export { metadata };
 import Main from "./main";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -24,10 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable}`} id="body">
-      <Analytics/>
+        <Analytics/>
         <Main  >
           {children}
           </Main>
+          <SpeedInsights />
       </body>
     </html>
   );
