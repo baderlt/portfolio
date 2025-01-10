@@ -28,13 +28,11 @@ const educationPage = () => {
           
           <Education_Description>
          
-Here’s a revised version incorporating the detail about the exams:
+          From January to September 2023, I underwent intensive preparation for the WorldSkills International Competition in Lyon 2024. To qualify for this training phase, I first passed regional and national exams. During this period, I participated in two major competitions to enhance my skills and gain practical experience.
 
-From January 2023 to September 2023, I engaged in intensive preparation for the WorldSkills International Competition in Lyon 2024. To participate in this preparation phase, I first qualified through regional and national exams. During this period, I participated in two significant competitions to enhance my skills and gain practical experience.
+First, I competed in the 4th Unofficial Web Development Competition 2024, an online event that tested my web development abilities. Second, I took part in the 54th National Competition in Taiwan for Web Technologies, where I further refined my expertise and measured my skills against international standards.
 
-First, I competed in the 4th Unofficial Web Development Competition 2024, an online event that challenged my abilities in web development. Second, I took part in the 54th National Competition in Taiwan for Web Technologies, where I further honed my skills and tested my knowledge against international standards.
-
-This preparation phase was crucial in refining my expertise and readying myself for the upcoming WorldSkills competition.
+This preparation phase was instrumental in sharpening my abilities and preparing me for the challenges of the WorldSkills competition.
           
           </Education_Description>
           </div>
@@ -53,12 +51,10 @@ This preparation phase was crucial in refining my expertise and readying myself 
             </div>
           
           <Education_Description>
-              I have obtained a diploma in Digital Development with a Full Stack
-              Web Option from ISTA Taza , the Office for Occupational Training
-              and Promotion of Employment in Morocco. This program provided me
-              with a comprehensive education in both the theoretical and
-              practical aspects of web development, equipping me with valuable
-              skills for various opportunities in the field.
+          I obtained a diploma in Digital Development with a Full Stack Web Option from ISTA Taza, 
+          part of the Office for Occupational Training and Promotion of Employment in Morocco.
+           This program provided me with a comprehensive education in both the theoretical and practical aspects of web development,
+           equipping me with valuable skills for various opportunities in the field.
           
           </Education_Description>
           </div>
