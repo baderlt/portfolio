@@ -34,6 +34,8 @@ const projectsPage = () => {
         "The simple stock management app, created with Laravel, React.js, Tailwind CSS, and MySQL, allows for  updating of stock levels with a user-friendly interface and a robust backend. This project showcases my skills in modern web development.",
       tags: ["React.js", "Laravel", "Mysql", "TailwindCSS", "MUI"],
       link: "https://github.com/baderlt/Gestion-stock",
+      preview: "https://youtu.be/43iqpwcbzC4",
+
     },
     {
       title: "Mysql_lt: Node.js ORM for MySQL",
