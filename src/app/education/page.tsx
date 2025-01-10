@@ -23,7 +23,7 @@ const educationPage = () => {
           </div>
           <div className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point">
             <div className="text-2xl font-rubik max-sm:text-xl flex flex-col lg:flex-row md:flex-row gap-5  mb-6">
-         <img src="worldskills.svg"  alt="worldskills" width={80} /> Cycle préparatoire de la compétition WorldSkills, <br /> CMC Rabat
+         <img src="worldskills.svg"  alt="worldskills" width={80} /> Cycle préparatoire de la compétition WorldSkills lyon 2024, <br /> CMC Rabat
             </div>
           
           <Education_Description>
